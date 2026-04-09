@@ -56,30 +56,57 @@ The dashboard provides a high-level view of:
 ## Screenshots
 
 ### Service Request Object
+Defines the central object used to track incoming service requests. This object captures key operational data such as request type, priority, SLA hours, and assigned technician, forming the foundation of the service management process.
+
 ![Service Request Object](assets/01_Service_Request_Object.png)
-
-### Fields Configuration
-![Fields](assets/02_Service_Request_Fields.png)
-
-### Technician Object
-![Technician Object](assets/03_Technician_Object.png)
-
-### Open Requests List View
-![Open Requests](assets/05_List_View_Open_Requests.png)
-
-### High Priority List View
-![High Priority](assets/06_List_View_High_Priority.png)
-
-### Automation Flow
-![Flow](assets/07_Flow_Auto_Assign.png)
-
-### Dashboard
-![Dashboard](assets/08_Service_Dashboard.png)
 
 ---
 
-## Future Enhancement
-I plan to enhance this system by adding validation rules to prevent assigning technicians who are unavailable or do not have the required skill for a service request.
+### Fields Configuration
+Shows the structured fields used to manage and standardize service requests. Fields such as Status, Priority, Request Type, SLA Hours, and timestamps ensure consistent tracking, reporting, and performance measurement.
+
+![Fields](assets/02_Service_Request_Fields.png)
+
+---
+
+### Technician Object
+Represents service technicians, including their skill type and availability status. This object supports intelligent assignment logic by ensuring only qualified and available technicians are selected.
+
+![Technician Object](assets/03_Technician_Object.png)
+
+---
+
+### Open Requests List View
+Displays all active service requests that are not yet completed. This view helps prioritize daily workload and provides visibility into pending tasks requiring action.
+
+![Open Requests](assets/05_List_View_Open_Requests.png)
+
+---
+
+### High Priority List View
+Filters and highlights urgent service requests based on priority level. This ensures critical issues are addressed quickly and supports operational efficiency.
+
+![High Priority](assets/06_List_View_High_Priority.png)
+
+---
+
+### Automation Flow (Auto-Assign Technician)
+Demonstrates a record-triggered flow that automatically assigns an available technician based on predefined criteria. This reduces manual effort, improves response time, and ensures consistent assignment logic.
+
+![Flow](assets/07_Flow_Auto_Assign.png)
+
+---
+
+### Service Operations Dashboard
+Provides a high-level view of service request workload, distribution, and technician assignments. The dashboard enables quick insights into operational performance and supports data-driven decision-making.
+
+![Dashboard](assets/08_Service_Dashboard.png)
+---
+
+## Enhancements Implemented
+
+A validation rule was implemented to enforce proper technician assignment. The rule prevents users from assigning technicians who are either unavailable or do not match the required skill type of the service request. This enhancement ensures data integrity, enforces real-world business constraints, and reduces the risk of incorrect assignments.
+This validation rule works alongside the automated assignment flow to ensure both automation and manual actions follow the same business rules.
 
 ---
 
