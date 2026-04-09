@@ -5,7 +5,7 @@ I built a Salesforce-based Service Operations Management system to simulate how 
 
 ---
 
-## Business Problem
+## Business Scenario
 Manual assignment of service requests lead to delays, uneven workload distribution, and incorrect technician assignments. There was also a risk of assigning technicians who are unavailable or lack the required skill set.
 
 ---
